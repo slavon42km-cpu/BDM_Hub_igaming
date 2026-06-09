@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Senior BDM | iGaming Affiliate Network</title>
+  <meta name="description" content="Senior BDM in an iGaming affiliate network focused on direct offers, global GEOs, CPA, RevShare, Hybrid deals, merchant access, tracking, automation and long-term partnerships.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050712;
+      --panel: rgba(12, 18, 38, 0.72);
+      --panel-strong: rgba(18, 28, 58, 0.88);
+      --text: #f3f7ff;
+      --muted: #9fb0d0;
+      --cyan: #2efcff;
+      --pink: #ff3df2;
+      --violet: #8f5bff;
+      --green: #65ffb9;
+      --line: rgba(255, 255, 255, 0.14);
+      --shadow: 0 0 34px rgba(46, 252, 255, 0.24), 0 0 70px rgba(255, 61, 242, 0.16);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(46, 252, 255, 0.18), transparent 34%),
+        radial-gradient(circle at 86% 8%, rgba(255, 61, 242, 0.17), transparent 32%),
+        linear-gradient(145deg, #03040b 0%, #071126 48%, #050712 100%);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, black, transparent 88%);
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: -20%;
+      pointer-events: none;
+      background:
+        linear-gradient(105deg, transparent 24%, rgba(46, 252, 255, 0.13), transparent 36%),
+        linear-gradient(245deg, transparent 58%, rgba(255, 61, 242, 0.13), transparent 72%);
+      filter: blur(10px);
+      animation: beam 9s ease-in-out infinite alternate;
+      z-index: -1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 0;
+      backdrop-filter: blur(18px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text);
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(46, 252, 255, 0.25), rgba(255, 61, 242, 0.22));
+      box-shadow: var(--shadow);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a,
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 14px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.04);
+      transition: color 180ms ease, border-color 180ms ease, transform 180ms ease;
+    }
+
+    .nav-links a:hover,
+    .pill:hover {
+      color: var(--text);
+      border-color: rgba(46, 252, 255, 0.72);
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      min-height: calc(100vh - 78px);
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.78fr);
+      align-items: center;
+      gap: 46px;
+      padding: 54px 0 90px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      color: var(--green);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 22px var(--green);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 22px;
+      font-size: clamp(3.25rem, 8vw, 6.8rem);
+      line-height: 0.88;
+      letter-spacing: -0.04em;
+    }
+
+    .glow {
+      background: linear-gradient(90deg, var(--cyan), #fff, var(--pink));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 0 20px rgba(46, 252, 255, 0.25));
+    }
+
+    .lead {
+      max-width: 650px;
+      color: #cbd7ef;
+      font-size: clamp(1.06rem, 2vw, 1.28rem);
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 50px;
+      border-radius: 999px;
+      padding: 0 20px;
+      border: 1px solid rgba(46, 252, 255, 0.6);
+      background: linear-gradient(135deg, rgba(46, 252, 255, 0.28), rgba(255, 61, 242, 0.18));
+      color: white;
+      font-weight: 800;
+      box-shadow: var(--shadow);
+      transition: transform 180ms ease, filter 180ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-3px) scale(1.01);
+      filter: brightness(1.14);
+    }
+
+    .button.secondary {
+      border-color: var(--line);
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: none;
+    }
+
+    .profile-card {
+      position: relative;
+      min-height: 510px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.035)),
+        var(--panel);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(46, 252, 255, 0.22);
+      border-radius: 18px;
+      pointer-events: none;
+    }
+
+    .profile-card::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -80px;
+      top: -70px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 61, 242, 0.45), transparent 66%);
+      filter: blur(10px);
+      z-index: -1;
+    }
+
+    .avatar {
+      position: relative;
+      width: 172px;
+      height: 172px;
+      margin: 58px auto 28px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background:
+        radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.85), transparent 12%),
+        linear-gradient(145deg, rgba(46, 252, 255, 0.84), rgba(143, 91, 255, 0.82), rgba(255, 61, 242, 0.78));
+      box-shadow: 0 0 44px rgba(46, 252, 255, 0.32);
+      color: #061020;
+      font-size: 3.2rem;
+      font-weight: 900;
+      letter-spacing: -0.08em;
+      overflow: hidden;
+    }
+
+    .avatar img {
+      position: absolute;
+      inset: 5px;
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      border-radius: 50%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .profile-card h2 {
+      margin-bottom: 8px;
+      text-align: center;
+      font-size: 1.95rem;
+    }
+
+    .profile-card p {
+      width: min(310px, calc(100% - 44px));
+      margin: 0 auto 26px;
+      text-align: center;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      width: calc(100% - 42px);
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--line);
+    }
+
+    .stat {
+      padding: 18px 10px;
+      text-align: center;
+      background: rgba(5, 7, 18, 0.78);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--cyan);
+      font-size: 1.25rem;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    section {
+      padding: 86px 0;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 4vw, 3.8rem);
+      line-height: 1;
+      margin-bottom: 14px;
+      letter-spacing: -0.035em;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.04rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .info-card,
+    .link-card,
+    .bot-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035));
+      backdrop-filter: blur(20px);
+    }
+
+    .info-card {
+      min-height: 230px;
+      padding: 24px;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 22px;
+      color: white;
+      background: linear-gradient(135deg, rgba(46, 252, 255, 0.4), rgba(255, 61, 242, 0.24));
+      box-shadow: 0 0 28px rgba(46, 252, 255, 0.18);
+      font-weight: 900;
+    }
+
+    .info-card h3,
+    .link-card h3,
+    .bot-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.18rem;
+    }
+
+    .info-card p,
+    .link-card p,
+    .bot-card p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .link-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: 58px 1fr auto;
+      align-items: center;
+      gap: 16px;
+      min-height: 132px;
+      padding: 18px;
+      overflow: hidden;
+      transition: transform 180ms ease, border-color 180ms ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(46, 252, 255, 0.58);
+    }
+
+    .link-card::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      right: -48px;
+      bottom: -62px;
+      border-radius: 50%;
+      background: var(--accent, rgba(46, 252, 255, 0.22));
+      filter: blur(16px);
+      opacity: 0.8;
+    }
+
+    .link-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--accent, rgba(46, 252, 255, 0.25));
+      color: #050712;
+      font-weight: 950;
+      font-size: 1rem;
+      box-shadow: 0 0 28px var(--accent, rgba(46, 252, 255, 0.25));
+    }
+
+    .link-card small {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    .arrow {
+      position: relative;
+      z-index: 1;
+      color: var(--text);
+      font-size: 1.4rem;
+    }
+
+    .bot-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .bot-card {
+      padding: 24px;
+    }
+
+    .bot-window {
+      border: 1px solid rgba(46, 252, 255, 0.24);
+      border-radius: 18px;
+      background: rgba(2, 7, 17, 0.82);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .bot-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 14px var(--cyan);
+    }
+
+    .chat {
+      min-height: 360px;
+      padding: 18px;
+    }
+
+    .bubble {
+      max-width: 82%;
+      margin-bottom: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      color: #dce8ff;
+      background: rgba(255, 255, 255, 0.08);
+      line-height: 1.45;
+    }
+
+    .bubble.user {
+      margin-left: auto;
+      color: #061020;
+      background: linear-gradient(135deg, var(--cyan), var(--green));
+      font-weight: 800;
+    }
+
+    .bot-options {
+      display: grid;
+      gap: 10px;
+      padding: 0 18px 18px;
+    }
+
+    .bot-options button {
+      cursor: pointer;
+      border: 1px solid rgba(46, 252, 255, 0.28);
+      border-radius: 12px;
+      padding: 12px 14px;
+      text-align: left;
+      color: var(--text);
+      background: rgba(46, 252, 255, 0.08);
+      font: inherit;
+      transition: transform 160ms ease, background 160ms ease;
+    }
+
+    .bot-options button:hover {
+      transform: translateX(4px);
+      background: rgba(255, 61, 242, 0.12);
+    }
+
+    .cta-band {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      padding: 30px;
+      border: 1px solid rgba(46, 252, 255, 0.28);
+      border-radius: 18px;
+      background:
+        linear-gradient(135deg, rgba(46, 252, 255, 0.16), rgba(255, 61, 242, 0.12)),
+        rgba(255, 255, 255, 0.04);
+      box-shadow: var(--shadow);
+    }
+
+    .cta-band h2 {
+      margin-bottom: 8px;
+      font-size: clamp(1.7rem, 3vw, 2.6rem);
+    }
+
+    .cta-band p {
+      color: var(--muted);
+      margin-bottom: 0;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 26px 0 42px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(54px) scale(0.98);
+      filter: blur(8px);
+      transition: opacity 700ms ease, transform 700ms ease, filter 700ms ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+
+    .float {
+      animation: float 5.8s ease-in-out infinite;
+    }
+
+    .scroll-fade {
+      will-change: transform, opacity;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-14px);
+      }
+    }
+
+    @keyframes beam {
+      from {
+        transform: translate3d(-2%, -1%, 0) rotate(0deg);
+      }
+      to {
+        transform: translate3d(2%, 1%, 0) rotate(4deg);
+      }
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .bot-layout,
+      .cta-band {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      .grid,
+      .links-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .profile-card {
+        min-height: 450px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        width: min(100% - 22px, 1160px);
+      }
+
+      h1 {
+        font-size: 3.15rem;
+      }
+
+      .nav-links a {
+        padding: 9px 11px;
+        font-size: 0.9rem;
+      }
+
+      .link-card {
+        grid-template-columns: 50px 1fr;
+      }
+
+      .arrow {
+        display: none;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Senior BDM home">
+        <span class="brand-mark">BDM</span>
+        <span>iGaming BDM Hub</span>
+      </a>
+      <div class="nav-links">
+        <a href="#expertise">Expertise</a>
+        <a href="#links">Contacts</a>
+        <a href="#bot">TG Bot</a>
+        <a href="#connect">Connect</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <header class="hero">
+        <div class="scroll-fade">
+          <span class="eyebrow">Affiliate Network • iGaming • Global GEOs</span>
+          <h1>Scale Your iGaming Traffic with <span class="glow">Direct Deals & Real Support</span></h1>
+          <p class="lead">
+            Senior BDM at an iGaming Affiliate Network helping affiliates and media buying teams scale through direct offers, flexible deal structures, trusted merchant partnerships, in-house tracking solutions and performance-focused support.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="https://t.me/Farmacevt777" target="_blank" rel="noreferrer">Discuss Opportunities</a>
+            <a class="button secondary" href="#bot">Find the Right Deal</a>
+          </div>
+        </div>
+
+        <aside class="profile-card float scroll-fade" aria-label="Profile summary">
+          <div class="avatar" aria-label="Senior Slavon profile photo">
+            S
+            <img src="https://t.me/i/userpic/320/Farmacevt777.jpg" alt="Senior Slavon profile photo" onerror="this.style.display='none'">
+          </div>
+          <h2>Senior Business Development Manager</h2>
+          <p>Building long-term partnerships between affiliates, media buyers and iGaming brands across multiple GEOs.</p>
+          <div class="stats">
+            <div class="stat">
+              <strong>Global GEOs</strong>
+              <span>Market coverage</span>
+            </div>
+            <div class="stat">
+              <strong>Direct Offers</strong>
+              <span>Merchant access</span>
+            </div>
+            <div class="stat">
+              <strong>CPA • RS • Hybrid</strong>
+              <span>Deal models</span>
+            </div>
+          </div>
+        </aside>
+      </header>
+
+      <section id="expertise" class="reveal">
+        <div class="section-head">
+          <h2>What I Bring</h2>
+          <p>
+            A business hub for affiliates, media buyers, operators and iGaming partners looking for relevant offers, scalable deal structures and reliable communication.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="info-card">
+            <div class="icon">01</div>
+            <h3>Direct Merchant Access</h3>
+            <p>Access to a broad portfolio of trusted iGaming brands and merchants across multiple GEOs with flexible commercial terms.</p>
+          </article>
+          <article class="info-card">
+            <div class="icon">02</div>
+            <h3>Partnership Growth</h3>
+            <p>Support with offer selection, GEO expansion, deal optimization and long-term partnership development.</p>
+          </article>
+          <article class="info-card">
+            <div class="icon">03</div>
+            <h3>Technology Ecosystem</h3>
+            <p>In-house tracker, automation tools, media buying infrastructure and ongoing development of our own iGaming platform ecosystem.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="links" class="reveal">
+        <div class="section-head">
+          <h2>Business Contacts</h2>
+          <p>
+            Choose the most convenient communication channel to discuss offers, GEOs, partnerships or business opportunities.
+          </p>
+        </div>
+        <div class="links-grid">
+          <a class="link-card" style="--accent: rgba(46, 166, 255, 0.42)" href="https://t.me/Farmacevt777" target="_blank" rel="noreferrer">
+            <span class="link-icon">TG</span>
+            <span>
+              <h3>Telegram</h3>
+              <p>Fastest way to discuss offers and GEOs</p>
+              <small>@Farmacevt777</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a class="link-card" style="--accent: rgba(101, 255, 185, 0.42)" href="https://wa.me/351928247611" target="_blank" rel="noreferrer">
+            <span class="link-icon">WA</span>
+            <span>
+              <h3>WhatsApp</h3>
+              <p>Quick mobile contact for active deals</p>
+              <small>+351 928 247 611</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a class="link-card" style="--accent: rgba(143, 91, 255, 0.44)" href="https://teams.microsoft.com/l/chat/0/0?users=slavon42km@gmail.com" target="_blank" rel="noreferrer">
+            <span class="link-icon">MS</span>
+            <span>
+              <h3>Microsoft Teams</h3>
+              <p>Business call for partnerships</p>
+              <small>slavon42km@gmail.com</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a class="link-card" style="--accent: rgba(255, 61, 242, 0.42)" href="https://www.instagram.com/viacheslav_bdm/" target="_blank" rel="noreferrer">
+            <span class="link-icon">IG</span>
+            <span>
+              <h3>Instagram</h3>
+              <p>Personal brand and industry updates</p>
+              <small>@viacheslav_bdm</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a class="link-card" style="--accent: rgba(46, 252, 255, 0.38)" href="https://www.linkedin.com/in/viacheslav-sharlai-5a96a9ab/" target="_blank" rel="noreferrer">
+            <span class="link-icon">IN</span>
+            <span>
+              <h3>LinkedIn</h3>
+              <p>Professional profile and B2B network</p>
+              <small>Viacheslav Sharlai</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a class="link-card" style="--accent: rgba(255, 255, 255, 0.24)" href="mailto:slavon42km@gmail.com">
+            <span class="link-icon">@</span>
+            <span>
+              <h3>Email</h3>
+              <p>Professional contact for business inquiries</p>
+              <small>slavon42km@gmail.com</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="bot" class="reveal">
+        <div class="section-head">
+          <h2>Affiliate Partner Assistant</h2>
+          <p>
+            A Telegram-based assistant designed to quickly route affiliates, media buyers and operators to the right offers, GEOs and partnership opportunities.
+          </p>
+        </div>
+        <div class="bot-layout">
+          <article class="bot-card">
+            <div class="icon">BOT</div>
+            <h3>Smart Partner Routing</h3>
+            <p>
+              The assistant can qualify traffic type, GEO focus, deal model preferences and business goals before connecting partners with the right opportunities.
+            </p>
+            <p style="margin-top:16px">
+              For launch, the CTA can connect directly to Telegram. Later, the same logic can become a real automated partner qualification flow.
+            </p>
+          </article>
+
+          <div class="bot-window" aria-live="polite">
+            <div class="bot-top">
+              <span class="dot"></span>
+              <span>Partner Assistant Preview</span>
+            </div>
+            <div class="chat" id="chat">
+              <div class="bubble">Welcome. What type of iGaming opportunity are you looking for?</div>
+            </div>
+            <div class="bot-options" id="botOptions"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" class="reveal">
+        <div class="cta-band">
+          <div>
+            <h2>Ready to Scale Your iGaming Business?</h2>
+            <p>Let's discuss offers, GEOs, traffic opportunities and long-term partnership growth.</p>
+          </div>
+          <a class="button" href="https://t.me/Farmacevt777" target="_blank" rel="noreferrer">Message Me on Telegram</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Senior BDM | iGaming Affiliate Network | Offers • GEOs • Partnerships | Telegram @Farmacevt777
+    </footer>
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.16 });
+
+    reveals.forEach((element) => observer.observe(element));
+
+    const scrollFaders = document.querySelectorAll(".scroll-fade");
+    const handleScroll = () => {
+      const y = window.scrollY;
+      scrollFaders.forEach((element, index) => {
+        const speed = index ? 0.28 : 0.18;
+        const opacity = Math.max(0.18, 1 - y / 680);
+        element.style.transform = `translateY(${-y * speed}px)`;
+        element.style.opacity = opacity.toFixed(2);
+      });
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    const chat = document.getElementById("chat");
+    const botOptions = document.getElementById("botOptions");
+
+    const initialBotMessage = "Welcome. What type of iGaming opportunity are you looking for?";
+
+    const flow = {
+      start: {
+        options: [
+          ["I'm looking for iGaming offers", "offers"],
+          ["I need CPA deals", "cpa"],
+          ["I need RevShare / Hybrid deals", "revshare"],
+          ["I represent an operator or platform", "operator"]
+        ]
+      },
+      offers: {
+        reply: "Great. I can help match your traffic with relevant iGaming offers based on GEO, source, volume and preferred deal model.",
+        options: [
+          ["Share my GEOs", "geo"],
+          ["Share traffic source", "source"],
+          ["Talk to Telegram", "telegram"]
+        ]
+      },
+      cpa: {
+        reply: "CPA deals depend on GEO, brand, traffic quality, source and volume. Share your setup and I will check relevant opportunities.",
+        options: [
+          ["Discuss GEOs", "geo"],
+          ["Discuss traffic volume", "volume"],
+          ["Message on Telegram", "telegram"]
+        ]
+      },
+      revshare: {
+        reply: "RevShare and Hybrid models work best for partners focused on long-term value, retention and consistent traffic quality.",
+        options: [
+          ["Discuss Hybrid terms", "hybrid"],
+          ["Discuss RevShare brands", "brands"],
+          ["Message on Telegram", "telegram"]
+        ]
+      },
+      operator: {
+        reply: "Operator and platform conversations can cover traffic acquisition, affiliate infrastructure, tracking, automation and partnership strategy.",
+        options: [
+          ["Book a Teams chat", "teams"],
+          ["Send business email", "email"],
+          ["Message on Telegram", "telegram"]
+        ]
+      },
+      geo: {
+        reply: "GEO qualification: target countries, restrictions, player value, current performance and preferred payout model.",
+        options: [["Start again", "reset"], ["Message on Telegram", "telegram"]]
+      },
+      source: {
+        reply: "Traffic source qualification: PPC, SEO, ASO, social, influencer, email, native, push, media buying or other sources.",
+        options: [["Start again", "reset"], ["Message on Telegram", "telegram"]]
+      },
+      volume: {
+        reply: "Volume qualification: monthly FTDs, deposits, traffic quality, current brands, conversion data and scaling potential.",
+        options: [["Start again", "reset"], ["Message on Telegram", "telegram"]]
+      },
+      hybrid: {
+        reply: "Hybrid discussion: CPA baseline, RevShare percentage, payment terms, caps, KPI, GEOs and traffic quality expectations.",
+        options: [["Start again", "reset"], ["Message on Telegram", "telegram"]]
+      },
+      brands: {
+        reply: "RevShare discussion: brand fit, retention, player LTV, GEO performance, tracking transparency and long-term growth potential.",
+        options: [["Start again", "reset"], ["Message on Telegram", "telegram"]]
+      },
+      telegram: {
+        reply: "Telegram is the fastest next step: @Farmacevt777",
+        link: "https://t.me/Farmacevt777",
+        options: [["Start again", "reset"]]
+      },
+      whatsapp: {
+        reply: "WhatsApp contact: +351 928 247 611",
+        link: "https://wa.me/351928247611",
+        options: [["Start again", "reset"]]
+      },
+      teams: {
+        reply: "Teams contact: slavon42km@gmail.com",
+        link: "https://teams.microsoft.com/l/chat/0/0?users=slavon42km@gmail.com",
+        options: [["Start again", "reset"]]
+      },
+      email: {
+        reply: "Email contact: slavon42km@gmail.com",
+        link: "mailto:slavon42km@gmail.com",
+        options: [["Start again", "reset"]]
+      }
+    };
+
+    function addBubble(text, type = "") {
+      const bubble = document.createElement("div");
+      bubble.className = `bubble ${type}`;
+      bubble.textContent = text;
+      chat.appendChild(bubble);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function renderOptions(step = "start") {
+      const node = flow[step];
+      botOptions.innerHTML = "";
+      node.options.forEach(([label, target]) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = label;
+        button.addEventListener("click", () => {
+          addBubble(label, "user");
+          if (target === "reset") {
+            chat.innerHTML = `<div class="bubble">${initialBotMessage}</div>`;
+            renderOptions("start");
+            return;
+          }
+          const next = flow[target];
+          addBubble(next.reply);
+          if (next.link) {
+            setTimeout(() => window.open(next.link, "_blank", "noreferrer"), 260);
+          }
+          renderOptions(target);
+        });
+        botOptions.appendChild(button);
+      });
+    }
+
+    renderOptions();
+  </script>
+</body>
+</html>
