@@ -449,11 +449,19 @@
       border-radius: 14px;
       display: grid;
       place-items: center;
-      background: var(--accent, rgba(46, 252, 255, 0.25));
-      color: #050712;
-      font-weight: 950;
-      font-size: 1rem;
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.96);
       box-shadow: 0 0 28px var(--accent, rgba(46, 252, 255, 0.25));
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+
+    .link-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     .link-card small {
@@ -726,7 +734,7 @@
               <span>Merchant access</span>
             </div>
             <div class="stat">
-              <strong>CPA • RS • Hybrid</strong>
+              <strong>CPA • Hybrid</strong>
               <span>Deal models</span>
             </div>
           </div>
@@ -768,7 +776,7 @@
         </div>
         <div class="links-grid">
           <a class="link-card" style="--accent: rgba(46, 166, 255, 0.42)" href="https://t.me/Farmacevt777" target="_blank" rel="noreferrer">
-            <span class="link-icon">TG</span>
+            <span class="link-icon"><img src="assets/telegram-logo.png" alt="Telegram logo"></span>
             <span>
               <h3>Telegram</h3>
               <p>Fastest way to discuss offers and GEOs</p>
@@ -778,7 +786,7 @@
           </a>
 
           <a class="link-card" style="--accent: rgba(101, 255, 185, 0.42)" href="https://wa.me/351928247611" target="_blank" rel="noreferrer">
-            <span class="link-icon">WA</span>
+            <span class="link-icon"><img src="assets/whatsapp-logo.jpeg" alt="WhatsApp logo"></span>
             <span>
               <h3>WhatsApp</h3>
               <p>Quick mobile contact for active deals</p>
@@ -788,7 +796,7 @@
           </a>
 
           <a class="link-card" style="--accent: rgba(143, 91, 255, 0.44)" href="https://teams.microsoft.com/l/chat/0/0?users=slavon42km@gmail.com" target="_blank" rel="noreferrer">
-            <span class="link-icon">MS</span>
+            <span class="link-icon"><img src="assets/teams-logo.jpeg" alt="Microsoft Teams logo"></span>
             <span>
               <h3>Microsoft Teams</h3>
               <p>Business call for partnerships</p>
@@ -798,7 +806,7 @@
           </a>
 
           <a class="link-card" style="--accent: rgba(255, 61, 242, 0.42)" href="https://www.instagram.com/viacheslav_bdm/" target="_blank" rel="noreferrer">
-            <span class="link-icon">IG</span>
+            <span class="link-icon"><img src="assets/instagram-logo.png" alt="Instagram logo"></span>
             <span>
               <h3>Instagram</h3>
               <p>Personal brand and industry updates</p>
@@ -808,7 +816,7 @@
           </a>
 
           <a class="link-card" style="--accent: rgba(46, 252, 255, 0.38)" href="https://www.linkedin.com/in/viacheslav-sharlai-5a96a9ab/" target="_blank" rel="noreferrer">
-            <span class="link-icon">IN</span>
+            <span class="link-icon"><img src="assets/linkedin-logo.webp" alt="LinkedIn logo"></span>
             <span>
               <h3>LinkedIn</h3>
               <p>Professional profile and B2B network</p>
@@ -818,7 +826,7 @@
           </a>
 
           <a class="link-card" style="--accent: rgba(255, 255, 255, 0.24)" href="mailto:slavon42km@gmail.com">
-            <span class="link-icon">@</span>
+            <span class="link-icon"><img src="assets/gmail-logo.jpg" alt="Gmail logo"></span>
             <span>
               <h3>Email</h3>
               <p>Professional contact for business inquiries</p>
