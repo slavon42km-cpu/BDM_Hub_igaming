@@ -1,0 +1,1089 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iGaming Growth</title>
+  <meta name="description" content="Senior BDM in an iGaming affiliate network focused on direct offers, global GEOs, CPA, RevShare, Hybrid deals, merchant access, tracking, automation and long-term partnerships.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050712;
+      --panel: rgba(12, 18, 38, 0.72);
+      --panel-strong: rgba(18, 28, 58, 0.88);
+      --text: #f3f7ff;
+      --muted: #9fb0d0;
+      --cyan: #2efcff;
+      --pink: #ff3df2;
+      --violet: #8f5bff;
+      --green: #65ffb9;
+      --line: rgba(255, 255, 255, 0.14);
+      --shadow: 0 0 34px rgba(46, 252, 255, 0.24), 0 0 70px rgba(255, 61, 242, 0.16);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(46, 252, 255, 0.18), transparent 34%),
+        radial-gradient(circle at 86% 8%, rgba(255, 61, 242, 0.17), transparent 32%),
+        linear-gradient(145deg, #03040b 0%, #071126 48%, #050712 100%);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, black, transparent 88%);
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: -20%;
+      pointer-events: none;
+      background:
+        linear-gradient(105deg, transparent 24%, rgba(46, 252, 255, 0.13), transparent 36%),
+        linear-gradient(245deg, transparent 58%, rgba(255, 61, 242, 0.13), transparent 72%);
+      filter: blur(10px);
+      animation: beam 9s ease-in-out infinite alternate;
+      z-index: -1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 0;
+      backdrop-filter: blur(18px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text);
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(46, 252, 255, 0.25), rgba(255, 61, 242, 0.22));
+      box-shadow: var(--shadow);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a,
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 14px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.04);
+      transition: color 180ms ease, border-color 180ms ease, transform 180ms ease;
+    }
+
+    .nav-links a:hover,
+    .pill:hover {
+      color: var(--text);
+      border-color: rgba(46, 252, 255, 0.72);
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      min-height: calc(100vh - 78px);
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.78fr);
+      align-items: center;
+      gap: 46px;
+      padding: 54px 0 90px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      color: var(--green);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 22px var(--green);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 22px;
+      font-size: clamp(3.25rem, 8vw, 6.8rem);
+      line-height: 0.88;
+      letter-spacing: -0.04em;
+    }
+
+    .glow {
+      background: linear-gradient(90deg, var(--cyan), #fff, var(--pink));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 0 20px rgba(46, 252, 255, 0.25));
+    }
+
+    .lead {
+      max-width: 650px;
+      color: #cbd7ef;
+      font-size: clamp(1.06rem, 2vw, 1.28rem);
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 50px;
+      border-radius: 999px;
+      padding: 0 20px;
+      border: 1px solid rgba(46, 252, 255, 0.6);
+      background: linear-gradient(135deg, rgba(46, 252, 255, 0.28), rgba(255, 61, 242, 0.18));
+      color: white;
+      font-weight: 800;
+      box-shadow: var(--shadow);
+      transition: transform 180ms ease, filter 180ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-3px) scale(1.01);
+      filter: brightness(1.14);
+    }
+
+    .button.secondary {
+      border-color: var(--line);
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: none;
+    }
+
+    .profile-card {
+      position: relative;
+      min-height: 510px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.035)),
+        var(--panel);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(46, 252, 255, 0.22);
+      border-radius: 18px;
+      pointer-events: none;
+    }
+
+    .profile-card::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -80px;
+      top: -70px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 61, 242, 0.45), transparent 66%);
+      filter: blur(10px);
+      z-index: -1;
+    }
+
+    .avatar {
+      position: relative;
+      width: 172px;
+      height: 172px;
+      margin: 58px auto 28px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background:
+        radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.85), transparent 12%),
+        linear-gradient(145deg, rgba(46, 252, 255, 0.84), rgba(143, 91, 255, 0.82), rgba(255, 61, 242, 0.78));
+      box-shadow: 0 0 44px rgba(46, 252, 255, 0.32);
+      color: #061020;
+      font-size: 3.2rem;
+      font-weight: 900;
+      letter-spacing: -0.08em;
+      overflow: hidden;
+    }
+
+    .avatar img {
+      position: absolute;
+      inset: 5px;
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      border-radius: 50%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .profile-card h2 {
+      margin-bottom: 8px;
+      text-align: center;
+      font-size: clamp(1.42rem, 2.7vw, 1.72rem);
+      line-height: 1.14;
+      padding: 0 26px;
+    }
+
+    .profile-card p {
+      width: min(310px, calc(100% - 44px));
+      margin: 0 auto 26px;
+      text-align: center;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      width: calc(100% - 42px);
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--line);
+    }
+
+    .stat {
+      padding: 18px 10px;
+      text-align: center;
+      background: rgba(5, 7, 18, 0.78);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--cyan);
+      font-size: 1.25rem;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    section {
+      padding: 86px 0;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 4vw, 3.8rem);
+      line-height: 1;
+      margin-bottom: 14px;
+      letter-spacing: -0.035em;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.04rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .info-card,
+    .link-card,
+    .bot-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035));
+      backdrop-filter: blur(20px);
+    }
+
+    .info-card {
+      min-height: 230px;
+      padding: 24px;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 22px;
+      color: white;
+      background: linear-gradient(135deg, rgba(46, 252, 255, 0.4), rgba(255, 61, 242, 0.24));
+      box-shadow: 0 0 28px rgba(46, 252, 255, 0.18);
+      font-weight: 900;
+    }
+
+    .info-card h3,
+    .link-card h3,
+    .bot-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.18rem;
+    }
+
+    .info-card p,
+    .link-card p,
+    .bot-card p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .link-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: 58px 1fr auto;
+      align-items: center;
+      gap: 16px;
+      min-height: 132px;
+      padding: 18px;
+      overflow: hidden;
+      transition: transform 180ms ease, border-color 180ms ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(46, 252, 255, 0.58);
+    }
+
+    .link-card::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      right: -48px;
+      bottom: -62px;
+      border-radius: 50%;
+      background: var(--accent, rgba(46, 252, 255, 0.22));
+      filter: blur(16px);
+      opacity: 0.8;
+    }
+
+    .link-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 0 28px var(--accent, rgba(46, 252, 255, 0.25));
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+
+    .link-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .link-card small {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    .arrow {
+      position: relative;
+      z-index: 1;
+      color: var(--text);
+      font-size: 1.4rem;
+    }
+
+    .bot-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .bot-card {
+      padding: 24px;
+    }
+
+    .bot-window {
+      border: 1px solid rgba(46, 252, 255, 0.24);
+      border-radius: 18px;
+      background: rgba(2, 7, 17, 0.82);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .bot-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 14px var(--cyan);
+    }
+
+    .chat {
+      min-height: 360px;
+      padding: 18px;
+    }
+
+    .bubble {
+      max-width: 82%;
+      margin-bottom: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      color: #dce8ff;
+      background: rgba(255, 255, 255, 0.08);
+      line-height: 1.45;
+    }
+
+    .bubble.user {
+      margin-left: auto;
+      color: #061020;
+      background: linear-gradient(135deg, var(--cyan), var(--green));
+      font-weight: 800;
+    }
+
+    .bot-options {
+      display: grid;
+      gap: 10px;
+      padding: 0 18px 18px;
+    }
+
+    .bot-options button {
+      cursor: pointer;
+      border: 1px solid rgba(46, 252, 255, 0.28);
+      border-radius: 12px;
+      padding: 12px 14px;
+      text-align: left;
+      color: var(--text);
+      background: rgba(46, 252, 255, 0.08);
+      font: inherit;
+      transition: transform 160ms ease, background 160ms ease;
+    }
+
+    .bot-options button:hover {
+      transform: translateX(4px);
+      background: rgba(255, 61, 242, 0.12);
+    }
+
+    .cta-band {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      padding: 30px;
+      border: 1px solid rgba(46, 252, 255, 0.28);
+      border-radius: 18px;
+      background:
+        linear-gradient(135deg, rgba(46, 252, 255, 0.16), rgba(255, 61, 242, 0.12)),
+        rgba(255, 255, 255, 0.04);
+      box-shadow: var(--shadow);
+    }
+
+    .cta-band h2 {
+      margin-bottom: 8px;
+      font-size: clamp(1.7rem, 3vw, 2.6rem);
+    }
+
+    .cta-band p {
+      color: var(--muted);
+      margin-bottom: 0;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 26px 0 42px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(54px) scale(0.98);
+      filter: blur(8px);
+      transition: opacity 700ms ease, transform 700ms ease, filter 700ms ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+
+    .float {
+      animation: float 5.8s ease-in-out infinite;
+    }
+
+    .scroll-fade {
+      will-change: transform, opacity;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-14px);
+      }
+    }
+
+    @keyframes beam {
+      from {
+        transform: translate3d(-2%, -1%, 0) rotate(0deg);
+      }
+      to {
+        transform: translate3d(2%, 1%, 0) rotate(4deg);
+      }
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .bot-layout,
+      .cta-band {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      .grid,
+      .links-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .profile-card {
+        min-height: 450px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        width: min(100% - 22px, 1160px);
+      }
+
+      h1 {
+        font-size: 3.15rem;
+      }
+
+      .nav-links a {
+        padding: 9px 11px;
+        font-size: 0.9rem;
+      }
+
+      .link-card {
+        grid-template-columns: 50px 1fr;
+      }
+
+      .arrow {
+        display: none;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Senior BDM home">
+        <span>Partnerships • Automation • Growth</span>
+      </a>
+      <div class="nav-links">
+        <a href="#expertise">Expertise</a>
+        <a href="#links">Contacts</a>
+        <a href="#bot">TG Bot</a>
+        <a href="#connect">Connect</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <header class="hero">
+        <div class="scroll-fade">
+          <span class="eyebrow">iGaming Growth Ecosystems</span>
+          <h1>Building<br>Partnerships,<br>Systems &<br>Technology<br><span class="glow">That Scale</span></h1>
+          <p class="lead">
+            Exploring the future of affiliate marketing, growth systems and AI-powered operations.<br><br>
+            Focused on building scalable partnerships, automation tools and business infrastructure.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="https://t.me/Farmacevt777" target="_blank" rel="noreferrer">Discuss Opportunities</a>
+            <a class="button secondary" href="#bot">Find the Right Deal</a>
+          </div>
+        </div>
+
+        <aside class="profile-card float scroll-fade" aria-label="Profile summary">
+          <div class="avatar" aria-label="Senior Slavon profile photo">
+            S
+            <img src="https://t.me/i/userpic/320/Farmacevt777.jpg" alt="Senior Slavon profile photo" onerror="this.style.display='none'">
+          </div>
+          <h2>Affiliate Growth & Partnerships</h2>
+          <p>Building affiliate ecosystems.<br>Scaling partnerships globally.<br>iGaming | AI | Business Development.</p>
+          <div class="stats">
+            <div class="stat">
+              <strong>Partnerships</strong>
+              <span>Global Network</span>
+            </div>
+            <div class="stat">
+              <strong>Automation</strong>
+              <span>AI & Workflows</span>
+            </div>
+            <div class="stat">
+              <strong>Products</strong>
+              <span>Tools & Infrastructure</span>
+            </div>
+          </div>
+        </aside>
+      </header>
+
+      <section id="expertise" class="reveal">
+        <div class="section-head">
+          <h2>What I Build</h2>
+          <p>
+            A growing ecosystem of partnerships, technology and business infrastructure designed to help affiliate teams, operators and digital businesses scale more efficiently.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="info-card">
+            <div class="icon">01</div>
+            <h3>Strategic Partnerships</h3>
+            <p>Building long-term relationships between affiliates, operators and media buying teams through trust, alignment and sustainable growth.</p>
+          </article>
+          <article class="info-card">
+            <div class="icon">02</div>
+            <h3>Growth Systems</h3>
+            <p>Designing scalable business processes, partnership frameworks and operational structures that support expansion across markets and teams.</p>
+          </article>
+          <article class="info-card">
+            <div class="icon">03</div>
+            <h3>Technology & Automation</h3>
+            <p>Developing tracking solutions, automation tools and AI-powered workflows that reduce manual work and improve decision-making.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="currently-building" class="reveal">
+        <div class="section-head">
+          <h2>Currently Building</h2>
+          <p>
+            Practical systems and product ideas focused on affiliate growth, operator intelligence, tracking transparency and AI-powered business operations.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="info-card">
+            <div class="icon">01</div>
+            <h3>AI Prospecting Engine</h3>
+            <p>Automating affiliate partner discovery, qualification and outreach workflows.</p>
+          </article>
+          <article class="info-card">
+            <div class="icon">02</div>
+            <h3>Operator Intelligence Hub</h3>
+            <p>Building systems for operator discovery, market research and opportunity mapping.</p>
+          </article>
+          <article class="info-card">
+            <div class="icon">03</div>
+            <h3>Affiliate Tracking Platform</h3>
+            <p>Developing transparent and scalable tracking infrastructure for performance partnerships.</p>
+          </article>
+          <article class="info-card">
+            <div class="icon">04</div>
+            <h3>Business Automation Systems</h3>
+            <p>Reducing manual operations through workflows, integrations and AI-powered processes.</p>
+          </article>
+          <article class="info-card">
+            <div class="icon">05</div>
+            <h3>Knowledge & Decision Framework</h3>
+            <p>Creating a personal operating system for strategic thinking, learning and decision-making.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="links" class="reveal">
+        <div class="section-head">
+          <h2>Business Contacts</h2>
+          <p>
+            Choose the most convenient communication channel to discuss offers, GEOs, partnerships or business opportunities.
+          </p>
+        </div>
+        <div class="links-grid">
+          <a class="link-card" style="--accent: rgba(46, 166, 255, 0.42)" href="https://t.me/Farmacevt777" target="_blank" rel="noreferrer">
+            <span class="link-icon"><img src="data:image/webp;base64,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" alt="Telegram logo"></span>
+            <span>
+              <h3>Telegram</h3>
+              <p>Fastest way to discuss offers and GEOs</p>
+              <small>@Farmacevt777</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a class="link-card" style="--accent: rgba(101, 255, 185, 0.42)" href="https://wa.me/351928247611" target="_blank" rel="noreferrer">
+            <span class="link-icon"><img src="data:image/webp;base64,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" alt="WhatsApp logo"></span>
+            <span>
+              <h3>WhatsApp</h3>
+              <p>Quick mobile contact for active deals</p>
+              <small>+351 928 247 611</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a class="link-card" style="--accent: rgba(143, 91, 255, 0.44)" href="https://teams.microsoft.com/l/chat/0/0?users=slavon42km@gmail.com" target="_blank" rel="noreferrer">
+            <span class="link-icon"><img src="data:image/webp;base64,UklGRvYKAABXRUJQVlA4IOoKAAAwPgCdASqgAKAAPj0YikMiIaEY/CUAIAPEsQBl7yP/gOoTCL5b8cvbRuj+e/FP5DdbIkbtP/kfcZ7Lvty8wD9OP8f1jvMZ+q//W/0/vR+lX/T+oB/Rf8z1o/oAftF6aX7qfCj+1P7Ve0T//7tl18aZsxt/m8e7xJaWiZl5KvqX2Ef1jQ0RZ1jTIWeP0rfYyGw0ZW5PzEvMkvlZBifqUlllN6CrZO9RzEgtYRHmXGIcCtp+9nAKun9TTiPBYcrwXHlUW0sXqKjOzcmYE7VKDuHZgDZQ/FP+E18oeJhryeZuTgCX/LnQECxNc0odEZn/nlPk4hcSqBNOXGHWaPrkFacQGhOLsuHLEX/l9JY6Y9vZN3AcScKbCQSVydWVUMHTM0fYp1YvA6x72yr3/v6TOA9+FXybVHcpupwGZTJrMCTdhTcUgk5lt5oMr7GUbFRklHGeJ5MQk7DdEmYOT5xdwmyW4XdLGbXJHro9+8v2r2IdYY6E1cXGKmEQCx8MvjWr3MLBjY/t25VFNRFtbzRe2J5X0OGnR7k9HiU7MeWt8T3wZnk3fM99Ek/fP8DBP2sGSSW9XKxKXCR+5Ur/EPstBTuPk0hb+gwoFZto+sq+OacrLxvl/0TzTdRpn6Gh8tE/koKRSgpME7zLu5g+QGub21BTqWPK5VHpKhFVAAD+/rQgPvVj3OaqX1M3abZk3dS6XoWC7sH0Q5iZAFR3g0WAEXPGpQhmVtLhGbTIyngYhvbfdb6v6sCrvGjG3oQs79844rA3Y6BLg1T4oBGXCY3HFfjw/+tBMm9P9CLO4ffrTpROM+H+rY7u3MQ4uVXBCah3L/p3hjysy9toKzYr+IpaI20m+4vxMKJhfu8eqbx23hrPFKQAAHCH17dSKihyvfbcj9UNSZ9d/U6Plmgn48r65EZV/v7fxsQj9u6F3Bpk1epYlNuDrwDWE9zhgebupbFPcXL3M/0ZT6LzDuWjMT69+pueOmIwxVnWVXis6JY1/RvFEFG7pPb/jFrssRoeTgb+79p9DkmvRk3ivUpNZ7rMKkYieGgdDaLrRLA0S2Mi+4frWZ+jTuSSydjCtS6NLRRNg71EY/vv8llgAXN8UjOafSEKsm5FLhG5JNBQuBM9p61baxTfPI6ot56pL6jnpISazLtRomTMdNBlGfswb9RVkR/SwI3zhCCW1lBuvpox0WuOMjVgVdL6X/q47eGZeAIByYgt4l9T/fdqN3Wtz4/G3Rh+yk9kLouerXGDI+xScD8XEQeP0hXrYmbLqtmD3kkrwcEwBhczPfDO/QGHSb5u8gcqEv06SDxjshHTuKuCW6yGUKGNBYei2dMokBIbI0Xyi2iIDZjbIFfJASHQ9V1my9GqP4IgyO+7ct1RfxocREa5fJVV/5thDHWf0mJ3mgHb1yBZABje/N5okrztHUaIjIMBB6DFj6YB0/5hDi2KieQ7o5Uz1wexAXJPu13M/dQcAWyblOKl34QiiNN4tx/VHAQYRZtA/BgNT5veGCRLTa1bqRxA9+O/kIzAliEjiO5jwq3fsyUzeEmDgxWhwG41IvhgM6b+G4T9/q9UFqGA9XhshhpeZ07NvKP6JqN7JepYjPXYH1g6I3i1G0agqZ4zO+4tYpmmn0n7aTZtDEE5C11YYSHZ6Dk+ER4rTfN7Z/RnPw9NkJns77Zw7gDVe0Kn/X6ZzBwBI/BAoyLKPgvYQc++DD5LUmcYWanf0ZobajSskYg4FeDvNJf17NDB/URYFkmzYi/9y8BWrSFS8a3W01hqntb8aISMmp90otvCnaW5l3NZoBJbypV9FS7wKFT2PoYSgDa/oy9uh4ncCNHMAhXHWxq8L40OJ7zAe4gLrWeBGfltdP0u5y3uNSqIrcAhw0TZW0G1b+j7c787mft3G9VwOT3ncNbSmJgolz6a1Bv33Sjnq/w0khN62evYfP37VppRJ8FZcNqZOLdNftSykJvKQXiBbBJy5O447C8ONtpXFpNAL5LfsOrOgVJt4Jn19rKO1xfqEZQjeCnzl3cGWIdcGIroa8MhLan8GZT/lhlIT/IRibH+HQO3mJM98hj3rrBq3MXDh7oq+RVJF/mDBJpcRUhep5rLugy6wQi3LzY4kpag5TFFX/qxckSNlb8/k1iXnsHdFannpSEnKPqNP+DL9hM/rDZE7SOvARMV+ZTtLA+f4vtXc2AcmEPdGyuxpO/lNYx8zGjSREw74D07qZA4nGTkNliIfnkxhnZF45SohntHTFH8hUDGLU/2/L2DctB5SLUjnufLWu0dSU3uv3FPV8r6EmrRbWGXC6OYY8Cpyt44EwDl5f+6b+eMaIOx7xPe1SBJ6KBM28gpbKsNOOEpqjWB9Rwuy56+XePTqltVwfYLf6Rjgp6mXakrpIPAkYaULeoaQbPq0dc6soqhhWQJEKLA40Gukz/Jgm1ei5Fbn5QyqnGpR8wLZR816YTUxhFAUT1oXVxhLGjPaq4urCs2itjpI/XvJ0GHLLEJw/ym5KOrR0LYyqmdYkqlirXkt8oGQbpOi35h8Pr9gtHPThaDYanPb+B8BbK7cgbQ/+xIOZiw8re7s3QJv27gecP+4hoUb6OvqPLtP6Kp3bq8YCG3VLywq2PC4uYnDnRQuyLGVhda9e9M+iX7KamxP8PWz7nYSkvu314Z2Tb9iznI8C1PAte4Sl0+Av7cBJoJOX0735PTrd5G57X7+zctN3LS0C1r5ofz6PPQ8YyWSAfBv8+U6j+Gb/uor6+2TX8eKQk/jmCq5LhMc3cH+uFXSqi7XH/QU/WlaY32/8lESZ/5X8kM8GUyVimvrtsNbgjZU4zbhFRwbP4fILl5tGeFw/MhHsikfPpBI4I/IWd90mr7xZkYm/dLo2WARqBlZtgAyFZO5xJhkolAMaw+TEnOe3/6XLddgXF/2H3INVg7PVJFhvfddC81tmEkqQj6uCjvQys9b5KkXEutho8FxoFyoIrdc1PbAxRElH/DSQArPHW9KEB6NOg9B2qKrIFzH6CC3xoTdwx3RX2EQfBt8eZWZsCZItzrvSZL7/Ktxc+XfLtZLb9N93Aucfr/Z7E3xWymWX11baEX3dIqG7giEkiHxBejD9JJJ8xqXkiXtJTMQuue1dv2AzGyY7uZQUx4n+1aWyt7O5v5hTgEKfzeFO/E5v99rIBHnnWDXt+sWDzfl0xkjRVhWQM29QflYaQ5t5yovXcYVyyJYurMsiJkg9oedASjql1gypRW3vqOIEszJDhrFQe0FO9PgVQpncHS49lMeXrOqHv+fyFuer/etAk/5my6HRlua9SP9LDAv1xCxoAwJ2QIgYyTvTPrsHADW8Cpoc85uoTKdn0f8BvVwoMSGKjM23dbrzaLQ3idCHoZszG3axqfF5swKpSqbG/LF1dLwPCaKEjrzghRVuLlM6ffMkVbR+4XX7wmFaXuPgEDNZbXNrRtLqlhPHkqjjXwULtpk2qyZ/LCwtY/2h7SoFv0kVnH8kvupBHN9BTp8DVw76ngH3pPMsuyHVi3YrUX6Gw49aoJWjHzJsqJmS8PEObGPuj5PmpZwQ/15NZ2aiKRDy7L26L5NZjRim1B3QUJWgvh/O4Ov3sy+NXeSzHCA6Tnd1BoA4SarqlWj+IYbIc+7D7XiB8k/TsqH6vnrRuyAgX35rjRMgmotZ2mdxoc5PhY+BYzGjTeH4Oqn/RNnsrbjKx4FbF9sfHU0RXAb1R8PFv3t+rQKpYDK9DJ3nLfhqAA" alt="Microsoft Teams logo"></span>
+            <span>
+              <h3>Microsoft Teams</h3>
+              <p>Business call for partnerships</p>
+              <small>slavon42km@gmail.com</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a class="link-card" style="--accent: rgba(255, 61, 242, 0.42)" href="https://www.instagram.com/viacheslav_aff_bd_growth/" target="_blank" rel="noreferrer">
+            <span class="link-icon"><img src="data:image/webp;base64,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" alt="Instagram logo"></span>
+            <span>
+              <h3>Instagram</h3>
+              <p>Personal brand and industry updates</p>
+              <small>@viacheslav_aff_bd_growth</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a class="link-card" style="--accent: rgba(46, 252, 255, 0.38)" href="https://www.linkedin.com/in/viacheslav-sharlai-5a96a9ab/" target="_blank" rel="noreferrer">
+            <span class="link-icon"><img src="data:image/webp;base64,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" alt="LinkedIn logo"></span>
+            <span>
+              <h3>LinkedIn</h3>
+              <p>Professional profile and B2B network</p>
+              <small>Viacheslav Sharlai</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+
+          <a class="link-card" style="--accent: rgba(255, 255, 255, 0.24)" href="mailto:slavon42km@gmail.com">
+            <span class="link-icon"><img src="data:image/webp;base64,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" alt="Gmail logo"></span>
+            <span>
+              <h3>Email</h3>
+              <p>Professional contact for business inquiries</p>
+              <small>slavon42km@gmail.com</small>
+            </span>
+            <span class="arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="bot" class="reveal">
+        <div class="section-head">
+          <h2>Affiliate Partner Assistant</h2>
+          <p>
+            A Telegram-based assistant designed to quickly route affiliates, media buyers and operators to the right offers, GEOs and partnership opportunities.
+          </p>
+        </div>
+        <div class="bot-layout">
+          <article class="bot-card">
+            <div class="icon">BOT</div>
+            <h3>Smart Partner Routing</h3>
+            <p>
+              The assistant can qualify traffic type, GEO focus, deal model preferences and business goals before connecting partners with the right opportunities.
+            </p>
+            <p style="margin-top:16px">
+              For launch, the CTA can connect directly to Telegram. Later, the same logic can become a real automated partner qualification flow.
+            </p>
+          </article>
+
+          <div class="bot-window" aria-live="polite">
+            <div class="bot-top">
+              <span class="dot"></span>
+              <span>Partner Assistant Preview</span>
+            </div>
+            <div class="chat" id="chat">
+              <div class="bubble">Welcome. What type of iGaming opportunity are you looking for?</div>
+            </div>
+            <div class="bot-options" id="botOptions"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" class="reveal">
+        <div class="cta-band">
+          <div>
+            <h2>Ready to Scale Your iGaming Business?</h2>
+            <p>Let's discuss offers, GEOs, traffic opportunities and long-term partnership growth.</p>
+          </div>
+          <a class="button" href="https://t.me/Farmacevt777" target="_blank" rel="noreferrer">Message Me on Telegram</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Senior BDM | iGaming Affiliate Network | Offers • GEOs • Partnerships | Telegram @Farmacevt777
+    </footer>
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.16 });
+
+    reveals.forEach((element) => observer.observe(element));
+
+    const scrollFaders = document.querySelectorAll(".scroll-fade");
+    const handleScroll = () => {
+      const y = window.scrollY;
+      scrollFaders.forEach((element, index) => {
+        const speed = index ? 0.28 : 0.18;
+        const opacity = Math.max(0.18, 1 - y / 680);
+        element.style.transform = `translateY(${-y * speed}px)`;
+        element.style.opacity = opacity.toFixed(2);
+      });
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    const chat = document.getElementById("chat");
+    const botOptions = document.getElementById("botOptions");
+
+    const initialBotMessage = "Welcome. What type of iGaming opportunity are you looking for?";
+
+    const flow = {
+      start: {
+        options: [
+          ["I'm looking for iGaming offers", "offers"],
+          ["I need CPA deals", "cpa"],
+          ["I need RevShare / Hybrid deals", "revshare"],
+          ["I represent an operator or platform", "operator"]
+        ]
+      },
+      offers: {
+        reply: "Great. I can help match your traffic with relevant iGaming offers based on GEO, source, volume and preferred deal model.",
+        options: [
+          ["Share my GEOs", "geo"],
+          ["Share traffic source", "source"],
+          ["Talk to Telegram", "telegram"]
+        ]
+      },
+      cpa: {
+        reply: "CPA deals depend on GEO, brand, traffic quality, source and volume. Share your setup and I will check relevant opportunities.",
+        options: [
+          ["Discuss GEOs", "geo"],
+          ["Discuss traffic volume", "volume"],
+          ["Message on Telegram", "telegram"]
+        ]
+      },
+      revshare: {
+        reply: "RevShare and Hybrid models work best for partners focused on long-term value, retention and consistent traffic quality.",
+        options: [
+          ["Discuss Hybrid terms", "hybrid"],
+          ["Discuss RevShare brands", "brands"],
+          ["Message on Telegram", "telegram"]
+        ]
+      },
+      operator: {
+        reply: "Operator and platform conversations can cover traffic acquisition, affiliate infrastructure, tracking, automation and partnership strategy.",
+        options: [
+          ["Book a Teams chat", "teams"],
+          ["Send business email", "email"],
+          ["Message on Telegram", "telegram"]
+        ]
+      },
+      geo: {
+        reply: "GEO qualification: target countries, restrictions, player value, current performance and preferred payout model.",
+        options: [["Start again", "reset"], ["Message on Telegram", "telegram"]]
+      },
+      source: {
+        reply: "Traffic source qualification: PPC, SEO, ASO, social, influencer, email, native, push, media buying or other sources.",
+        options: [["Start again", "reset"], ["Message on Telegram", "telegram"]]
+      },
+      volume: {
+        reply: "Volume qualification: monthly FTDs, deposits, traffic quality, current brands, conversion data and scaling potential.",
+        options: [["Start again", "reset"], ["Message on Telegram", "telegram"]]
+      },
+      hybrid: {
+        reply: "Hybrid discussion: CPA baseline, RevShare percentage, payment terms, caps, KPI, GEOs and traffic quality expectations.",
+        options: [["Start again", "reset"], ["Message on Telegram", "telegram"]]
+      },
+      brands: {
+        reply: "RevShare discussion: brand fit, retention, player LTV, GEO performance, tracking transparency and long-term growth potential.",
+        options: [["Start again", "reset"], ["Message on Telegram", "telegram"]]
+      },
+      telegram: {
+        reply: "Telegram is the fastest next step: @Farmacevt777",
+        link: "https://t.me/Farmacevt777",
+        options: [["Start again", "reset"]]
+      },
+      whatsapp: {
+        reply: "WhatsApp contact: +351 928 247 611",
+        link: "https://wa.me/351928247611",
+        options: [["Start again", "reset"]]
+      },
+      teams: {
+        reply: "Teams contact: slavon42km@gmail.com",
+        link: "https://teams.microsoft.com/l/chat/0/0?users=slavon42km@gmail.com",
+        options: [["Start again", "reset"]]
+      },
+      email: {
+        reply: "Email contact: slavon42km@gmail.com",
+        link: "mailto:slavon42km@gmail.com",
+        options: [["Start again", "reset"]]
+      }
+    };
+
+    function addBubble(text, type = "") {
+      const bubble = document.createElement("div");
+      bubble.className = `bubble ${type}`;
+      bubble.textContent = text;
+      chat.appendChild(bubble);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function renderOptions(step = "start") {
+      const node = flow[step];
+      botOptions.innerHTML = "";
+      node.options.forEach(([label, target]) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = label;
+        button.addEventListener("click", () => {
+          addBubble(label, "user");
+          if (target === "reset") {
+            chat.innerHTML = `<div class="bubble">${initialBotMessage}</div>`;
+            renderOptions("start");
+            return;
+          }
+          const next = flow[target];
+          addBubble(next.reply);
+          if (next.link) {
+            setTimeout(() => window.open(next.link, "_blank", "noreferrer"), 260);
+          }
+          renderOptions(target);
+        });
+        botOptions.appendChild(button);
+      });
+    }
+
+    renderOptions();
+  </script>
+</body>
+</html>
+
+{
+  "name": "igaming-growth-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static iGaming Growth landing page with a Telegram bot webhook for Vercel.",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
