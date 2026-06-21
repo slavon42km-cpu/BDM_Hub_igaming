@@ -31,16 +31,48 @@ const QUESTIONS = [
   }
 ];
 
-const START_MESSAGE = "Welcome to Affiliate iGaming Bot.\nWhat type of iGaming opportunity are you looking for?";
+const START_MESSAGE = "👋 Welcome to Affiliate iGaming Bot.\n\nChoose what best describes your current goal, and I’ll route you to the right flow.";
 
+// Start buttons shown after /start.
 const START_KEYBOARD = {
   inline_keyboard: [
-    [{ text: "I'm looking for iGaming offers", callback_data: "path:offers" }],
-    [{ text: "I have traffic", callback_data: "path:traffic" }],
-    [{ text: "I represent an operator / advertiser", callback_data: "path:operator" }],
-    [{ text: "I need tracker / automation", callback_data: "path:automation" }],
-    [{ text: "I need consulting", callback_data: "path:consulting" }]
+    [{ text: "🎰 I have traffic / looking for iGaming offers", callback_data: "path:traffic_offers" }],
+    [{ text: "🏢 I’m looking for traffic / I’m an operator or advertiser", callback_data: "path:operator_advertiser" }],
+    [{ text: "🧠 I need consulting services", callback_data: "path:consulting" }],
+    [{ text: "🤝 I want another type of collaboration", callback_data: "path:other_collaboration" }]
   ]
+};
+
+const PATH_CONFIRMATIONS = {
+  traffic_offers: "🎯 Perfect. I’ll help qualify your traffic and understand which iGaming offers may fit your GEOs, source and scale.",
+  operator_advertiser: "🏢 Great. I’ll collect what kind of traffic, partners or acquisition support you are looking for.",
+  consulting: "🧠 Got it. I’ll qualify your current situation and what type of consulting support you need.",
+  other_collaboration: "🤝 Sure. I’ll collect the context and route it properly."
+};
+
+const ROLE_QUESTION = "Great. What best describes you or your company?";
+
+// Role buttons shown after the first path selection.
+const ROLE_KEYBOARD = {
+  inline_keyboard: [
+    [{ text: "👤 Solo affiliate", callback_data: "role:solo_affiliate" }],
+    [{ text: "📈 Media buyer / team", callback_data: "role:media_buyer" }],
+    [{ text: "🌐 Affiliate network", callback_data: "role:affiliate_network" }],
+    [{ text: "🏢 Operator / brand", callback_data: "role:operator_brand" }],
+    [{ text: "📊 Advertiser", callback_data: "role:advertiser" }],
+    [{ text: "⚙️ Tech provider", callback_data: "role:tech_provider" }],
+    [{ text: "Other", callback_data: "role:other" }]
+  ]
+};
+
+const ROLE_LABELS = {
+  solo_affiliate: "Solo affiliate",
+  media_buyer: "Media buyer / team",
+  affiliate_network: "Affiliate network",
+  operator_brand: "Operator / brand",
+  advertiser: "Advertiser",
+  tech_provider: "Tech provider",
+  other: "Other"
 };
 
 // Flow state is stored in memory for now.
@@ -85,20 +117,44 @@ async function handleCallbackQuery(callbackQuery) {
   const user = callbackQuery.from || {};
   const chatId = callbackQuery.message?.chat?.id || user.id;
 
-  if (!data.startsWith("path:") || !user.id || !chatId) {
+  if (!user.id || !chatId) {
     return;
   }
 
-  const path = data.replace("path:", "");
-  flowState.set(String(user.id), {
-    path,
-    chatId,
-    user,
-    step: 0,
-    answers: {}
-  });
+  if (data.startsWith("path:")) {
+    const path = data.replace("path:", "");
+    flowState.set(String(user.id), {
+      path,
+      chatId,
+      user,
+      step: 0,
+      answers: {}
+    });
 
-  await sendMessage(chatId, QUESTIONS[0].text);
+    await sendMessage(chatId, PATH_CONFIRMATIONS[path] || "Sure. I’ll collect the context and route it properly.");
+    await sendMessage(chatId, ROLE_QUESTION, ROLE_KEYBOARD);
+    return;
+  }
+
+  if (data.startsWith("role:")) {
+    const role = data.replace("role:", "");
+    const state = flowState.get(String(user.id));
+
+    if (!state) {
+      await sendMessage(chatId, "Use /start to begin.");
+      return;
+    }
+
+    state.answers.role = ROLE_LABELS[role] || role;
+    state.chatId = chatId;
+    state.user = user;
+    state.step = 1;
+    flowState.set(String(user.id), state);
+
+    // Future path-specific flows should branch here based on state.path.
+    // For now, continue with the existing text-based qualification questions.
+    await sendMessage(chatId, QUESTIONS[state.step].text);
+  }
 }
 
 async function handleMessage(message) {
